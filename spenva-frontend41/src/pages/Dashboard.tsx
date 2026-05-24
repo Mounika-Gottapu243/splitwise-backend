@@ -381,7 +381,7 @@ export default function Dashboard() {
                     {[
                       { label: "Add an expense", to: "/expense", color: "bg-teal-600 hover:bg-teal-700 text-white" },
                       { label: "View Friends", to: "/friends-dashboard", color: "bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" },
-                      { label: "View Groups", to: "/group-dashboard", color: "bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" },
+                      { label: "Add a group", to: "/GroupPage", color: "bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" },
                     ].map(({ label, to, color }) => (
                       <button
                         key={to}

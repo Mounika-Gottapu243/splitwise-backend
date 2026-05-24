@@ -31,11 +31,9 @@ const HomePage = () => {
 
           <div className="flex items-center gap-3">
             <ThemeToggle />
+            {/* Login → /login | Signup → /signup */}
             <Button label="Login" variant="secondary" onClick={() => navigate("/login")} />
-            <Button
-              label="Signup"
-              onClick={() => navigate("/login", { state: { signup: true } })}
-            />
+            <Button label="Signup" onClick={() => navigate("/signup")} />
           </div>
         </div>
       </div>
@@ -55,15 +53,9 @@ const HomePage = () => {
             </p>
 
             <div className="mt-8 flex w-full max-w-sm gap-3">
-              <Button
-                label="Create account"
-                onClick={() => navigate("/login", { state: { signup: true } })}
-              />
-              <Button
-                label="Log in"
-                variant="secondary"
-                onClick={() => navigate("/login")}
-              />
+              {/* Hero CTA: Create account → /signup | Log in → /login */}
+              <Button label="Create account" onClick={() => navigate("/signup")} />
+              <Button label="Log in" variant="secondary" onClick={() => navigate("/login")} />
             </div>
           </section>
 
@@ -143,5 +135,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
-
